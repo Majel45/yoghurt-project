@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yoghurt 🥛</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #5a67d8;
+        margin: 10px 0 0;
+        line-height: 1px;
+      }
+      h2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #5a67d8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      a:visited {
+        text-decoration: none;
+        color: #5a67d8;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      .learn-more {
+        text-decoration: none;
+        color: #5a67d8;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>I love Yoghurt</h1>
+      <h2>Especially Greek Yoghurt</h2>
+      <img
+        src="https://images.unsplash.com/photo-1562114808-b4b33cf60f4f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8eW9ndXJ0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="Greek Yoghurt"
+      />
+      <p>
+        Strained yogurt, Greek yogurt, yogurt cheese, sack yogurt, or kerned
+        yogurt is yogurt that has been strained to remove most of its whey,
+        resulting in a thicker consistency than regular unstrained yogurt, while
+        still preserving the distinctive sour taste.
+        <br />
+      </p>
+      <a
+        href="https://images.eatthismuch.com/site_media/img/254520_ldementhon_71b6a3e2-ec54-48c0-9ba3-73d8596244ae.png"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia</a
+      >
+      <button class="buy-button">👉 Buy Greek Yoghurt</button>
+      <p class="footer">
+        This page was coded by Marilyn Greve, which is
+        <a href="https://github.com/Majel45/yogurt-project"
+          >open-sourced on GitHub</a
+        >
+      </p>
+    </div>
+
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favourite emoji?");
+
+        if (name.length > 0) {
+          alert(`Thank you, ${name}! 
+        We'll be in touch by email, meanwhile have a lot of Yoghurt! ${emoji}`);
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
